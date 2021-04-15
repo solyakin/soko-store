@@ -8,3 +8,25 @@
 .order-number span{
     font-weight: 500;
 }
+@media only screen and (max-width: 480px){
+    .checkout .header{
+        display: none;
+    }
+    .checkout-content{
+        width: 85%;
+    }
+    .checkout-content h3, .checkout-content p{
+        font-size: 14px;
+    }
+    .checkout-content .buttons{
+        width: 100%;
+        margin: 0px;
+    }
+    .checkout-content .buttons button{
+        width: 100%;
+    }
+    .checkout .buttons .first-btn{
+        border: 1px solid royalblue;
+        background: white;
+    }
+}
