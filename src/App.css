@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1600px;
+}
+a{
+  color: #9c9c9c;
+  text-decoration : none
+}
+img{
+  object-fit: cover;
+}
+hr{
+  color : #9c9c9c;
+  opacity : 0.3
+}
+.app .mobile-menu{
+  display : none;
+}
+@media only screen and (max-width: 480px){
+  .app .mobile-menu{
+    display: flex;
+  }
+}

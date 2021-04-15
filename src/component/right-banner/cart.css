@@ -1,0 +1,36 @@
+.right-banner{
+    max-width: 368px;
+    width: 100%;
+    margin-left: 15px;
+}
+.right-banner .cart-content{
+    width: 268;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+    margin-bottom: 10px;
+}
+.cart-content img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.cart-content p{
+    font-size: 13px;
+}
+.cart-content .count{
+    width: 60px;
+    margin: auto;
+    
+}
+.cart-content .count span{
+    margin-left: 0px;
+    border-radius: 0;
+    background-color: white;
+}
+.cart-content .count span:first-child, .cart-content .count span:last-child{
+    background-color: #E9EFF9;
+}

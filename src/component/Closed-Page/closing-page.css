@@ -1,0 +1,10 @@
+.checkout-content{
+    text-align: center;
+    margin: 50px auto;
+}
+.order-number{
+    margin-bottom: 40px;
+}
+.order-number span{
+    font-weight: 500;
+}

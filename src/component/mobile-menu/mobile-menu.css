@@ -1,0 +1,35 @@
+.mobile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    border-top: 1px solid #9c9c9c;
+}
+svg{
+    color : #9c9c9c
+}
+.home, .cater, .mobile-menu .bag, .order{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.mobile-menu p{
+    font-size: 10px;
+    margin: 3px 0px;
+}
+.home{
+    position: relative;
+    line-height: 20px;
+}
+.home::after{
+    content : '';
+    position: absolute;
+    height: 2px;
+    background-color: royalblue;
+    width: 100%;
+    top: -11px;
+    left: 0px;
+}

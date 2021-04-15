@@ -1,0 +1,22 @@
+.left-banner ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+    margin-top: 40px;
+}
+.left-banner ul li{
+    cursor: pointer;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #7a7777;
+}
+.left-banner .view-all{
+    color : #447BD3;
+    display: flex;
+    align-items: center;
+}
+.fa-angle-right{
+    margin-left: 20px;
+    font-size: 23px;
+}

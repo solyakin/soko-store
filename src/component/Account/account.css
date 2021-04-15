@@ -1,0 +1,221 @@
+.account-wrapper{
+    display: flex;
+    width: 75%;
+    height: 100vh;
+    margin: 40px auto;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.left-column{
+    margin-left: 10px;
+}
+.left-column > div{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.my-order{
+    position: relative;
+    cursor: pointer;
+}
+.my-address{
+    position: absolute;
+    cursor: pointer;
+}
+.my-order p, .my-address p{
+    margin-left: 20px;
+}
+.my-order .fa-book, .my-address .fa-location-arrow{
+    margin-left: 10px;
+}
+.order-text{
+    background: #EEF3FB;
+    border-right: 3px solid royalblue;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+    transition: transform .6s;
+}
+.left-column{
+    border-right: 1px solid #d3d3d3;
+    flex: 0.25
+}
+.right-column{
+    flex: 0.75;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.right-column .top-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.top-text h3{
+    color: #504e4e;
+}
+.top-text button{
+    display: inline-block;
+    justify-content: center;
+    padding: 0px 2em;
+    background: #ffffff;
+    border: 2px solid #9c9c9c;
+    border-radius: 5px;
+    height: 40px;
+}
+.top-text button span{
+    margin-left: 10px;
+}
+.all-orders{
+    display: flex;
+}
+.orders{
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 30px;
+}
+.orders .logo{
+    background-color: #f0efef;
+    padding: 13px 11px;
+    border-radius: 50%;
+}
+.orders .main{
+    display: flex;
+    align-items: center;
+}
+.orders:first-child{
+    margin-right: 20px;
+}
+.orders span{
+    margin-left: 20px;
+}
+.flex-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content1, .content2{
+    line-height: 2px;
+}
+.content2{
+    text-align: right;
+}
+.content1 p, .content2 p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #9c9c9c;
+}
+.content1 h5, .content2 h5{
+    font-weight: 500;
+}
+.shipped{
+    font-size: 13px;
+    font-weight: bold;
+    color: sandybrown;
+}
+.delivered{
+    font-size: 13px;
+    font-weight: bold;
+    color: royalblue ;
+}
+.address-list{
+    display: flex;
+}
+.address-list .address-wrapper{
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 0px 20px;   
+}
+.address-wrapper h4{
+    font-size: 14px;
+}
+.address-wrapper p{
+    font-size: 12px;
+    color: #504e4e;
+}
+.address-wrapper .mobile{
+    font-weight: 600;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btns p{
+    font-size: 14px;
+}
+.btns p:last-child{
+    color: red;
+}
+.new-address-wrapper{
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 57px 40px; 
+    cursor: pointer;    
+}
+.fa-window-close{
+    cursor: pointer;
+}
+.new-address-wrapper p{
+    color: royalblue;
+    font-size: 14px;
+}
+.address-form{
+    z-index: 9;
+}
+.form-wrapper{
+    width: 35%;
+    background: white;
+    border-radius: 5px;
+    margin: 10% auto;
+}
+.form-wrapper hr{
+    margin-top: 0px;
+}
+.form-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+.main-input{
+    display: flex;
+    flex-direction: column;
+    color: #9c9c9c;
+    padding: 30px;
+}
+.main-input input, .main-input textarea{
+    padding: .6em 1em;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.main-input textarea{
+    height: 70px;
+}
+.main-input label{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.main-input input:focus, .main-input textarea:focus{
+    outline: none;
+}
+.edit-address-btn{
+    width: 150px;
+    text-align: center;
+    padding: 1em 0;
+    border: none;
+    border-radius: 5px;
+    color: royalblue;
+    margin-bottom: 40px;
+    font-weight: 600;
+    background: #F8DE4B;
+    transform: translate(100%);
+}

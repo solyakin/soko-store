@@ -1,0 +1,88 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10%;
+    position : relative;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.main-logo{
+    background-color: #f0efef;
+    padding: 15px 13px;
+    border-radius: 50%;
+}
+.logo{
+    font-size: 25px;
+}
+.logo-text{
+    margin-left: 20px;
+    line-height: 8px;
+}
+.logo-text p{
+    font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 500;
+}
+.left-menu{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bag{
+    display: flex;
+    align-items: center;
+}
+.fa-shopping-bag, .fa-user{
+    font-size: 20px;
+}
+/* .bag-icon{
+    position: relative;
+}
+.bag span{
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    background-color: rgb(247, 37, 37);
+    padding: 1px 3px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white;
+} */
+.left-menu > .bag p, .left-menu > .account span{
+    margin-left: 20px;
+    font-weight: 400;
+    color: #9c9c9c;
+}
+.header-line{
+    background-color: #9c9c9c;
+    opacity: 0.3;
+    position: relative;
+}
+ /* end of header */
+
+@media only screen and (max-width: 480px){
+    .left-menu, .header-line{
+        display: none;
+        position: fixed;
+    }
+    header{
+        margin: 10px 3%;
+    }
+    .logo-text p{
+        width: 80%;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .logo-text{
+        margin-top: 0;
+        line-height: 14px;
+        margin-left: 10px;
+    }
+    .logo-text h3{
+        margin-bottom : 10px
+    }
+}

@@ -1,0 +1,123 @@
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: -10px 10%;
+}
+.main-content .middle{
+    border-left: 2px solid rgb(221, 220, 220);
+    border-right: 2px solid rgb(221, 220, 220);
+    padding: 0px 20px;
+}
+.search-bar{
+    position: absolute;
+    top: 14%;
+    left: 33%;
+    display: flex;
+    align-items: center;
+}
+.search-bar input{
+    width: 400px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #f0efef;
+    color: black;
+    padding: 12px 20px;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.search-btn{
+    background-color: #F8DE4B;
+    padding: 11.5px;
+    margin-left: -5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.main-content{
+    text-align: left;
+}
+.middle .category .images{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.middle .category .image-container{
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+}
+.middle .category{
+    margin: 0;
+}
+.middle .category .search-bar{
+    display: none;
+}
+.content{
+    margin-top: 40px; 
+}
+.content h3{
+    color: #7a7777;
+}
+.content span{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    background: #447BD3;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.products-wrapper{
+    padding-bottom: 20px;
+}
+.main-content .right h3{
+    margin-left: 15px;
+}
+.right h3 span{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 5px;
+    background: #447BD3;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.right button{
+    width: 80%;
+    display: inline-block;
+    padding: 1em 2em;
+    margin:  0px auto;
+    border: none;
+    border-radius: 5px;
+    background: #F8DE4B;
+    font-weight: bold;
+    font-size: 14px;
+    color: #447BD3;
+    transform: translate(15%);
+}
+.right button:focus{
+    outline: none;
+}
+@media only screen and (max-width: 480px){
+    .left{
+        display: none;
+    }
+    .search-bar{
+        width: 100%;
+        position: unset;
+        margin-bottom: 20px;
+    }
+    .main-content{
+        margin: 10px;
+        display: block;
+    }
+    .main-content .middle{
+        border: none;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .middle .category h3{
+        margin-bottom: 5px;
+    }
+}

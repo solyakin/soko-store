@@ -1,0 +1,32 @@
+.footer{
+    text-align: center;
+    margin: 30px auto;
+}
+.footer h5{
+    font-weight: 400;
+    color: #B9B9B9;
+}
+.footer h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #262626;
+    margin-bottom: 6px;
+}
+.footer p{
+    font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.footer button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #40C251;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.footer button:focus{
+    outline: none;
+}

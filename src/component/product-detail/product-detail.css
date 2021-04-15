@@ -1,0 +1,122 @@
+.main-container{
+    margin: 20px 10%;
+}
+.product-info h3{
+    color : #3C3C3C;
+}
+.product-info p{
+    color: #838282;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+} 
+.pricing-discount{
+    display: flex;
+    align-items: center;
+}
+.pricing-discount h3{
+    margin-right: 30px;
+    font-weight: 500;
+}
+.pricing-discount span{
+    font-size: 12px;
+    padding: 5px;
+    background: #DD655E;
+    color: white;
+    border-radius: 3px;
+}
+.price p{
+    margin-top: -10px;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.count{
+    border: 2px solid #88AAE2;
+    border-radius: 5px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.count span{
+    text-align: center;
+    width: 100%;
+    color: #447BD3;
+}
+.count span:first-child, .count span:last-child{
+    background: #E9EFF9;
+}
+.buttons button{
+    display: inline-block;
+    padding: 1em 4em;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #2766CC;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons button:focus{
+    outline: none;
+}
+.buttons button:first-child{
+    border: 2px solid #2766CC;
+    background: white;
+}
+.buttons button:last-child{
+    border: none;
+    background: #F8DE4B;
+}
+/* start of related product */
+.related-products{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.related-products h2{
+    font-size: 16px;
+    color: #9b9999;
+    font-weight: 400;
+}
+.related-products-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.related-products-container .product{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.product img{
+    width: 100%;
+    height: 148px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.product p{
+    font-size: 14px;
+    color: #3e3e3e;
+    font-weight: 500;
+}
+@media only screen and (max-width: 480px){
+    .related-products, .product-detail .bottom-banner, .product-detail .footer, .product-detail .header{
+        display: none;
+    }
+    .pricing-discount h3{
+        font-size: 14px;
+        margin-bottom: 1px;
+        margin-right: 10px;
+    }
+    .pricing-discount span{
+        font-size: 10px;
+        padding: 3px;
+    }
+    .price p{
+        font-size: 10px;
+    }
+    
+}

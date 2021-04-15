@@ -1,0 +1,40 @@
+.middle-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+.middle-banner img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.middle-banner h3{
+    font-weight: 500;
+    font-size: 14px;
+    color: #7a7777;
+}
+.middle-banner p{
+    color: #7a7777;
+    font-size: 12px;
+}
+.buy-btn button{
+    padding: 4px 8px;
+    border: 2px solid #93B2E6;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #447BD3;
+    background: white;
+    cursor: pointer;
+}
+.buy-btn button:focus{
+    outline: none;
+}
+.fa-plus{
+    margin-right: 5px;
+}

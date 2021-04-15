@@ -1,0 +1,71 @@
+.track-order header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.track-order .track-wrapper{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 40px;
+}
+.track-wrapper hr{
+    opacity: 0.3;
+}
+.track-wrapper hr:last-child{
+    margin-top: 30px;
+}
+.track-wrapper svg{
+    font-size: 28px;
+}
+.track-wrapper .order-shipped{
+    color: rgb(28, 163, 28);
+}
+.order-target{
+    color: rgb(230, 77, 77);
+}
+.target{
+    display: flex;
+    align-items: center;
+}
+.target > div{
+    margin-left: 20px;
+}
+.target p{
+    font-size: 12px;
+}
+.target h5{
+    font-weight: 500;
+    font-size: 14px;
+}
+.order-items h3{
+    font-weight: 500;
+    color: #9c9c9c;
+    font-size: 14px;
+}
+.single-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.single-item .product{
+    display: flex;
+}
+.single-item .product img{
+    width: 90px;
+    height: 100px;
+    margin-right: 20px;
+}
+.single-item > p{
+    font-size: 12px;
+}
+.delivery-record h3{
+    font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 400;
+}
+.delivery-record p{
+    line-height: 15px;
+    font-size: 12px;
+}
