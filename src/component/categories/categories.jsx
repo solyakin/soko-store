@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/swiper-bundle.css'
 import '../categories/categories.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -29,73 +31,86 @@ const Category = ({setKid, setHome, setElectronics, setFuniture, setGrocery, set
                 <FontAwesomeIcon icon={faSearch} color= {'#9c9c9c'} className="search-btn"/>
             </div>
             <h3 className="top-categories">TOP CATEGORIES</h3>
+
             <div className="images">
-                <div className="image-container">
-                    <img className="fruit" src={fruit} alt=""/>
-                    <div className="overlay">
-                        <p>Fresh Food</p>
-                    </div>
-
-                </div>
-                <div className="image-container">
-                    <img src={headset} alt=""/>
-                    <Link to='/'>
-                        <div className="overlay" onClick={setElectronics}>
-                            <p>Electronics</p>
+                <Swiper slidesPerView={3}>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img className="fruit" src={fruit} alt=""/>
+                            <div className="overlay">
+                                <p>Fresh Food</p>
+                            </div>
                         </div>
-                    </Link>
-                </div>
-                <div className="image-container">
-                    <img src={head} alt="" />
-                    <Link to='/'>
-                        <div className="overlay" onClick={setHome}>
-                            <p>Home Stuff</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img src={headset} alt=""/>
+                            <Link to='/'>
+                                <div className="overlay" onClick={setElectronics}>
+                                    <p>Electronics</p>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-                </div>
-                <div className="image-container">
-                    <img src={chair} alt="" />
-                    <Link to='/'>
-                        <div className="overlay" onClick={setFuniture}>
-                            <p>Funiture</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img src={head} alt="" />
+                            <Link to='/'>
+                                <div className="overlay" onClick={setHome}>
+                                    <p>Home Stuff</p>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-
-                </div>
-                <div className="image-container">
-                    <img src={grocery} alt=""/>
-                    <div className="overlay">
-                        <p>Grocery</p>
-                    </div>
-
-                </div>
-                <div className="image-container">
-                    <img src={women} alt=""/>
-                    <Link to='/'>
-                        <div className="overlay" onClick={setFood}>
-                            <p>Women</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img src={chair} alt="" />
+                            <Link to='/'>
+                                <div className="overlay" onClick={setFuniture}>
+                                    <p>Funiture</p>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-
-                </div>
-                <div className="image-container">
-                    <img src={kid} alt=""/>
-                    {/* <Link to='/'> */}
-                        <div className="overlay" onClick={setGrocery}>
-                            <p>Hats</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img src={grocery} alt=""/>
+                            <div className="overlay">
+                                <p>Grocery</p>
+                            </div>
                         </div>
-                    {/* </Link> */}
-                    
-                </div>
-                <div className="image-container">
-                    <img src={sneakers} alt=""/>
-                    <Link to='/'>
-                        <div className="overlay"  onClick={setKid}>
-                            <p>Men</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img src={women} alt=""/>
+                            <Link to='/'>
+                                <div className="overlay" onClick={setFood}>
+                                    <p>Women</p>
+                                </div>
+                            </Link>
                         </div>
-                    </Link>
-
-                </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img src={kid} alt=""/>
+                            {/* <Link to='/'> */}
+                                <div className="overlay" onClick={setGrocery}>
+                                    <p>Hats</p>
+                                </div>
+                            {/* </Link> */} 
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-container">
+                            <img src={sneakers} alt=""/>
+                            <Link to='/'>
+                                <div className="overlay"  onClick={setKid}>
+                                    <p>Men</p>
+                                </div>
+                            </Link>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>                
             </div> 
         </div>
     )
